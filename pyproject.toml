@@ -1,0 +1,16 @@
+[project]
+name = "korea-stock-alert-bot"
+version = "0.1.0"
+description = "KOSPI/KOSDAQ strategy alerts, charts, and backtesting"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pykrx==1.2.8"]
+
+[project.scripts]
+stock-alert = "market_watcher.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["market_watcher*"]
+
+[tool.ruff]
+line-length = 100

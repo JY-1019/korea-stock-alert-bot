@@ -1,0 +1,23 @@
+{
+  "mode": "setup",
+  "host": "127.0.0.1",
+  "port": 8765,
+  "poll_seconds": 3,
+  "database": "data/alerts.db",
+  "report_dir": "reports",
+  "kis_app_key": "",
+  "kis_app_secret": "",
+  "krx_id": "",
+  "krx_password": "",
+  "telegram_bot_token": "",
+  "telegram_chat_id": "",
+  "strategies": [
+    {
+      "type": "previous_turnover_leader_pullback",
+      "drawdown_levels": [8, 10, 12, 15],
+      "stop_loss": 5,
+      "take_profit": 4,
+      "tranche_pct": 25
+    }
+  ]
+}
